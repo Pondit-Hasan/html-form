@@ -17,9 +17,80 @@
 				<h1>My first basic html form</h1>
 				<p>Lorem ipsum dolor sit amet.</p>
 				<form action="">
-					<div class="form-group">
-						<label for="fname">First Name:</label>
-						<input class="form-control" id="fname" type="text" placeholder="Enter your first name" value=""/>
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="fname">First Name:</label>
+						<div class="col-sm-9">
+							<input class="form-control" id="fname" type="text" placeholder="Enter your first name" value=""/>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="lname">Last Name:</label>
+						<div class="col-sm-9">
+							<input class="form-control" id="lname" type="text" placeholder="Enter your last name" value=""/>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="email">Email:</label>
+						<div class="col-sm-9">
+							<input class="form-control" id="email" type="email" placeholder="Enter your email address" value=""/>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="birth_date">Birth Date:</label>
+						<div class="col-sm-9">
+							<input class="form-control" id="birth_date" type="date" value=""/>
+						</div>
+					</div>
+					<div class="form-group row">
+						<p class="col-sm-3 ">Select your gender:</p>
+						<div class="col-sm-9">
+							<input name="gender" id="Male" type="radio" value="Male"/> <label for="Male">Male</label>
+							<input name="gender" id="Female" type="radio" value="Female"/> <label for="Female">Female</label>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="home_dist">Home District:</label>
+						<div class="col-sm-9">
+							<select name="home_dist" id="home_dist" class="form-control">
+								<option value="">Select your home district</option>
+								<option value="Gazipur">Gazipur</option>
+								<option value="Mymensingh">Mymensingh</option>
+								<option value="Dhaka">Dhaka</option>
+								<option value="Comilla">Comilla</option>
+								<option value="Sylhet">Sylhet</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="skills">Select your skills:</label>
+						<div class="col-sm-9">
+							<select name="skills" id="skills" class="form-control" multiple>
+								<option value="HTML">HTML</option>
+								<option value="CSS">CSS</option>
+								<option value="PHP">PHP</option>
+								<option value="JavaScript">JavaScript</option>
+								<option value="Python">Python</option>
+								<option value="C#">C#</option>
+								<option value="C++">C++</option>
+								<option value="Java">Java</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-gourp row">
+						<p class="col-sm-3">Select your language skills</p>
+						<div class="col-sm-9">
+							<input name="lang_skills" id="English" type="checkbox" value="English">
+							<label for="English">English</label>
+							<input name="lang_skills" id="Bangla" type="checkbox" value="Bangla">
+							<label for="Bangla">Bangla</label>
+							<input name="lang_skills" id="Hindi" type="checkbox" value="Hindi">
+							<label for="Hindi">Hindi</label>
+							<input name="lang_skills" id="Telugu" type="checkbox" value="Telugu">
+							<label for="Telugu">Telugu</label>
+						</div>
+					</div>
+					<div class="form-group my-3 text-center">
+						<input name="signUp" class="btn btn-info" type="submit" value="Submit">
 					</div>
 				</form>
 			</div> <!-- col-lg-8 div end -->
