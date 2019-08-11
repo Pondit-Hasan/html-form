@@ -1,41 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-		<title>Html Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- bootstrap css link -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<title>Basic HTML form</title>
 </head>
 <body>
-			<h2>This is my first html form-1</h2>
-			
-			
-			<form action="#" method="post">
-				<fieldset>
-					<legend>Personal Information: </legend>
-					
-						First Name: <br/>
-							<input type="text" name="firstname" value="First Name"></input>
-						<br/>
-						Last Name: <br/>
-							<input type="text" name="lastname" value="Last Name"></input>
-						
-						<br/>
-						ID No. <br/>
-						<input type="digits" name="idnumber" value="Example 23859"></input>
-						<br/>
-						Gender: <br/>
-						<input type="radio" name="gender" value="male" checked>Male</input>
-						<br/>
-						<input type="radio" name="gender" value="female">Female</input>
-						<br/>
-						<input type="radio" name="gender" value="other">Other</input>
-						<br/>
-						
-						<br/>
-						<br/>
-						<input type="submit" value="Submit">
-				</fieldset>
-			</form>
-
-			
+<section>
+	<div class="container m-auto">
+		<div class="row">
+			<div class="col-lg-8 m-auto">
+				<h1>My first basic html form</h1>
+				<p>Lorem ipsum dolor sit amet.</p>
+				<form action="">
+					<div class="form-group">
+						<label for="fname">First Name:</label>
+						<input class="form-control" id="fname" type="text" placeholder="Enter your first name" value=""/>
+					</div>
+				</form>
+			</div> <!-- col-lg-8 div end -->
+		</div>
+	</div> <!-- container div end -->
+</section>	
 </body>
-
 </html>
